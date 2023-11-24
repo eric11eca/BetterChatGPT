@@ -67,6 +67,18 @@ export const modelCost = {
     prompt: { price: 0.0015, unit: 1000 },
     completion: { price: 0.002, unit: 1000 },
   },
+  'meditron-70b-instruct': {
+    prompt: { price: 0.0015, unit: 1000 },
+    completion: { price: 0.002, unit: 1000 },
+  },
+  'llama-2-7b': {
+    prompt: { price: 0.0015, unit: 1000 },
+    completion: { price: 0.002, unit: 1000 },
+  },
+  'meditron-7b': {
+    prompt: { price: 0.0015, unit: 1000 },
+    completion: { price: 0.002, unit: 1000 },
+  },
   'gpt-3.5-turbo': {
     prompt: { price: 0.0015, unit: 1000 },
     completion: { price: 0.002, unit: 1000 },
