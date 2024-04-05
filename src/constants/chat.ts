@@ -30,13 +30,9 @@ export const modelOptions: ModelOptions[] = [
   'llama-2-70b',
   'meditron-7b',
   'meditron-70b',
-<<<<<<< HEAD
-  'meditron-70b-instruct'
-=======
   'meditron-70b-instruct',
-  'meditron-7b-sft',
->>>>>>> 600cd07 (render errors fix)
-];
+  'meditron-7b-instruct'
+]
 
 export const defaultModel = 'meditron-7b';
 

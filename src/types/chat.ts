@@ -62,7 +62,8 @@ export type ModelOptions =
   | 'llama-2-70b'
   | 'meditron-7b'
   | 'meditron-70b'
-  | 'meditron-70b-instruct';
+  | 'meditron-70b-instruct'
+  | 'meditron-7b-instruct';
 // | 'gpt-3.5-turbo-0301';
 // | 'gpt-4-0314'
 // | 'gpt-4-32k-0314'
