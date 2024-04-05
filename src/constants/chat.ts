@@ -30,13 +30,19 @@ export const modelOptions: ModelOptions[] = [
   'llama-2-70b',
   'meditron-7b',
   'meditron-70b',
+<<<<<<< HEAD
   'meditron-70b-instruct'
+=======
+  'meditron-70b-instruct',
+  'meditron-7b-sft',
+>>>>>>> 600cd07 (render errors fix)
 ];
 
-export const defaultModel = 'gpt-3.5-turbo';
+export const defaultModel = 'meditron-7b';
 
 export const modelMaxToken = {
-  'meditron-7b': 4096,
+  'meditron-7b': 2048,
+  'meditron-7b-sft': 2048,
   'llama-2-7b': 4096,
   'llama-2-70b': 4096,
   'meditron-70b': 4096,
@@ -76,6 +82,10 @@ export const modelCost = {
     completion: { price: 0.002, unit: 1000 },
   },
   'meditron-7b': {
+    prompt: { price: 0.0015, unit: 1000 },
+    completion: { price: 0.002, unit: 1000 },
+  },
+  'meditron-7b-sft': {
     prompt: { price: 0.0015, unit: 1000 },
     completion: { price: 0.002, unit: 1000 },
   },
@@ -141,12 +151,12 @@ export const modelCost = {
   },
 };
 
-export const defaultUserMaxToken = 4000;
+export const defaultUserMaxToken = 1024;
 
 export const _defaultChatConfig: ConfigInterface = {
   model: defaultModel,
   max_tokens: defaultUserMaxToken,
-  temperature: 1,
+  temperature: 0.7,
   presence_penalty: 0,
   top_p: 1,
   frequency_penalty: 0,

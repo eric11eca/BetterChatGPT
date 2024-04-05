@@ -132,7 +132,6 @@ export const getChatCompletionStream = async (
     }
     throw new Error(error);
   }
-
   const stream = response.body;
   return stream;
 };
